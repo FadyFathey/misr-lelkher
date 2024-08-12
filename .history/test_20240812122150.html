@@ -18697,20 +18697,15 @@
             showSlide(currentSlide);
         });
     </script>
-
-</body>
 <script>
-    document.addEventListener('DOMContentLoaded', function () {
-        // Select the menu toggle button and the menu itself
-        var menuToggle = document.querySelector('.menu-toggle');
-        var menu = document.querySelector('.menu');
-
-        // Add a click event listener to the toggle button
-        menuToggle.addEventListener('click', function () {
-            // Toggle the 'open' class on the menu
-            menu.classList.toggle('open');
+    document.addEventListener('DOMContentLoaded', function() {
+        var dropdown = document.querySelector('.dropdown');
+        dropdown.addEventListener('click', function() {
+            dropdown.classList.toggle('open');
         });
     });
-</script>
+    </script>
+    
+</body>
 
 </html>

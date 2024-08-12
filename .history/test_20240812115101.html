@@ -18673,44 +18673,7 @@
         integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ=="
         data-cf-beacon='{"rayId":"8b1ec00bdad412b5","serverTiming":{"name":{"cfL4":true}},"version":"2024.7.0","token":"0f88213f53184e2b83e59ad04e26f59c"}'
         crossorigin="anonymous"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            var slider = document.querySelector('.slider');
-            var slides = slider.querySelectorAll('.slide');
-            var currentSlide = 0;
-
-            function showSlide(index) {
-                slides[currentSlide].classList.remove('active');
-                currentSlide = (index + slides.length) % slides.length;
-                slides[currentSlide].classList.add('active');
-            }
-
-            document.querySelector('.next').addEventListener('click', function () {
-                showSlide(currentSlide + 1);
-            });
-
-            document.querySelector('.prev').addEventListener('click', function () {
-                showSlide(currentSlide - 1);
-            });
-
-            // Initial slide
-            showSlide(currentSlide);
-        });
-    </script>
 
 </body>
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        // Select the menu toggle button and the menu itself
-        var menuToggle = document.querySelector('.menu-toggle');
-        var menu = document.querySelector('.menu');
-
-        // Add a click event listener to the toggle button
-        menuToggle.addEventListener('click', function () {
-            // Toggle the 'open' class on the menu
-            menu.classList.toggle('open');
-        });
-    });
-</script>
 
 </html>
